@@ -1211,7 +1211,7 @@
 		"movement": 2,
 		"strength": 550,
 		"cost": 675,
-		"requiredResource": "Oil",,
+		"requiredResource": "Oil",
 		"requiredTech": "Electronics",
 		"uniques": ["Cannot attack", "Can carry [10] [Aircraft] units","Consumes [2] Oil","Consumes [1] Iron"]
 	},
