@@ -1211,9 +1211,9 @@
 		"movement": 2,
 		"strength": 550,
 		"cost": 675,
-		"requiredResource": ["Oil","Uranium"],
+		"requiredResource": "Oil",,
 		"requiredTech": "Electronics",
-		"uniques": ["Cannot attack", "Can carry [10] [Aircraft] units"]
+		"uniques": ["Cannot attack", "Can carry [10] [Aircraft] units","Consumes [2] Oil","Consumes [1] Iron"]
 	},
 	{
 		"name": "Battleship",
