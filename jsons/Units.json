@@ -1223,7 +1223,7 @@
 		"rangedStrength": 400,
 		"range": 2,
 		"cost": 0,
-		"requiredResource": "Oil"[1],
+		"requiredResource": "[2] Oil",
 		"requiredTech": "Electronics",
 		"uniques": ["Never appears as a Barbarian unit","Consumes [2] Oil","Consumes [1] Iron"],
 		"promotions": ["Indirect Fire"],
