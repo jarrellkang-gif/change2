@@ -93,6 +93,38 @@
 		"attackSound": "nonmetalhit"
 		//Barbarian unique naval unit, weaker and slower than Trireme.
 	},
+	
+	{
+		"name": "Battering Ram",
+		"unitType": "Sword", // You might expect this to be a siege unit, but apparently it is not
+		"movement": 2,
+		"strength": 10,
+		"cost": 75,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Physics",
+		"upgradesTo": "Trebuchet",
+		"uniques": ["[+300]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "[-33]% Strength <when defending>",
+		"[-1] Sight", "Can only attack [City] units"],
+		"promotions":  ["Cover I"],
+		"attackSound": "throw"
+	},
+
+	/* Classical Era */
+	{
+		"name": "Horseman",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 12,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>" ],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+
 	{
 		"name": "Chariot Archer",
 		"unitType": "Archery",
@@ -105,6 +137,7 @@
 		"uniques": ["Rough terrain penalty"],
 		"attackSound": "arrow"
 	},
+
 	{
 		"name": "Horse Archer",
 		"unitType": "Archery",
@@ -125,62 +158,10 @@
 		"requiredTech": "The Wheel",
 		"attackSound": "elephant"
 	},
-	{
-		"name": "Spearman",
-		"unitType": "Sword",
-		"movement": 2,
-		"strength": 11,
-		"cost": 56,
-		"requiredTech": "Bronze Working",
-		"obsoleteTech": "Civil Service",
-		"upgradesTo": "Pikeman",
-		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Battering Ram",
-		"unitType": "Sword", // You might expect this to be a siege unit, but apparently it is not
-		"movement": 2,
-		"strength": 10,
-		"cost": 75,
-		"requiredTech": "Bronze Working",
-		"obsoleteTech": "Physics",
-		"upgradesTo": "Trebuchet",
-		"uniques": ["[+300]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "[-33]% Strength <when defending>",
-		"[-1] Sight", "Can only attack [City] units"],
-		"promotions":  ["Cover I"],
-		"attackSound": "throw"
-	},
-	{
-		"name": "Marauder",
-		"unitType": "Sword",
-		"replaces": "Spearman",
-		"uniqueTo": "Barbarians",
-		"movement": 2,
-		"strength": 10,
-		"cost": 56,
-		"requiredTech": "Bronze Working",
-		"obsoleteTech": "Civil Service",
-		"upgradesTo": "Pikeman",
-		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
-		"attackSound": "metalhit"
-	},
 
-	/* Classical Era */
-	{
-		"name": "Horseman",
-		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 12,
-		"cost": 75,
-		"requiredTech": "Horseback Riding",
-		"requiredResource": "Horses",
-		"upgradesTo": "Knight",
-		"obsoleteTech": "Chivalry",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>" ],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},
+
+
+	
 	{
 		"name": "Companion Cavalry",
 		"unitType": "Mounted",
