@@ -610,7 +610,7 @@
 		"requiredTech": "Replaceable Parts",
 		"attackSound": "shot"
 	},
-	
+
 	{
 		"name": "Local Rebels",
 		"unitType": "Gunpowder",
@@ -621,19 +621,20 @@
 		"uniques": ["Withdraws before melee combat",
 					"Invisible to non-adjacent units",
 					"No movement cost to pillage",
-					"[+50]% Health from pillaging tiles",
-					"Heals [110] damage if it kills a unit",
+					"[+150]% Health from pillaging tiles",
+					"Heals [11] damage if it kills a unit",
 					"Unit will heal every turn, even if it performs an action",
 					"[-70]% Strength <when attacking>",
-					"[+150]% Strength <when attacking>",
+					"[150]% Strength <when defending>",
 					"May capture killed [Wounded] units",
 					"[+100]% XP gained from combat",
-					"[+40]% Strength bonus for [Friendly] units within [2] tiles",
+					"Ignores Zone of Control",
+					"[+20]% Strength bonus for [Friendly] units within [2] tiles",
 					"Cannot move"]
 		"requiredTech": "Replaceable Parts",
 		"attackSound": "shot"
 	},
-
+	
 	{
 		"name": "Landship",
 		"unitType": "Armored",
