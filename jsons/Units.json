@@ -36,21 +36,18 @@
 		"cost": 40,
 		"obsoleteTech": "Metal Casting",
 		"upgradesTo": "Light Infantry",
-		"uniques": ["May upgrade to [Light Infantry] through ruins-like effects"],
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
 			{"text": "This is your basic, club-swinging fighter."}
 		]
 	},
 	{
-		"name": "Brute",
+		"name": "Heavy Warrior",
 		"unitType": "Sword",
-		"uniqueTo": "Barbarians",
-		"replaces": "Warrior",
 		"movement": 2,
 		"strength": 8,
 		"cost": 20,
-		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Heavy Infantry",
 		"upgradesTo": "Swordsman",
 		"attackSound": "nonmetalhit"
 	},
@@ -62,8 +59,6 @@
 		"rangedStrength": 7,
 		"cost": 40,
 		"requiredTech": "Archery",
-		"obsoleteTech": "Construction",
-		"upgradesTo": "Composite Bowman",
 		"attackSound": "arrow"
 	},
 	{
@@ -83,7 +78,6 @@
 		"cost": 45,
 		"requiredTech": "Sailing",
 		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit"],
-		"upgradesTo": "Caravel",
 		"obsoleteTech": "Astronomy",
 		"attackSound": "nonmetalhit"
 	},
@@ -95,7 +89,6 @@
 		"strength": 7,
 		"cost": 40,
 		"uniques": ["Cannot enter ocean tiles"],
-		"upgradesTo": "Trireme",
 		"obsoleteTech": "Astronomy",
 		"attackSound": "nonmetalhit"
 		//Barbarian unique naval unit, weaker and slower than Trireme.
