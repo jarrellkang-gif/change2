@@ -72,10 +72,7 @@
 		"movement": 2,
 		"strength": 5,
 		"rangedStrength": 7,
-		"cost": 40,
-		"requiredTech": "Archery",
-		"obsoleteTech": "Construction",
-		"upgradesTo": "Composite Bowman",
+		"cost": 300,
 		"uniques": ["[1] Range"],
 		"attackSound": "arrow"
 	},
@@ -125,7 +122,7 @@
 		"movement": 4,
 		"strength": 2,
 		"rangedStrength": 10,
-		"cost": 56,
+		"cost": 400,
 		"requiredTech": "The Wheel",
 		"requiredResource": "Horses",
 		"uniques": ["Rough terrain penalty", "Never appears as a Barbarian unit","Can move after attacking"],
@@ -149,11 +146,7 @@
 		"strength": 7,
 		"rangedStrength": 10,
 		"cost": 56,
-		"requiredTech": "The Wheel",
-		"upgradesTo": "Knight",
-		"obsoleteTech": "Chivalry",
 		"uniques": ["No defensive terrain bonus"],
-		"promotions": ["Accuracy I"],
 		"attackSound": "arrow"
 	},
 	{
@@ -164,9 +157,7 @@
 		"rangedStrength": 11,
 		"cost": 70,
 		"requiredTech": "The Wheel",
-		"upgradesTo": "Knight",
-		"obsoleteTech": "Chivalry",
-		"uniques": ["No defensive terrain bonus","[+90]% Strength <vs [Wounded] units> <when attacking>","[-90% Strenght <when defending>"],
+		"uniques": ["No defensive terrain bonus","[+90]% Strength <vs [Wounded] units> <when attacking>","[-90% Strength <when defending>"],
 		"attackSound": "elephant"
 	},
 	{
@@ -226,8 +217,6 @@
 	{
 		"name": "Ballista",
 		"unitType": "Siege",
-		"replaces": "Catapult",
-		"uniqueTo": "Rome",
 		"movement": 2,
 		"strength": 8,
 		"rangedStrength": 10,
