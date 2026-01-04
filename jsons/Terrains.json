@@ -88,7 +88,8 @@
             "Considered [Food] when determining start locations <in [Tundra] Regions>",
             "Considered [Desirable] when determining start locations <in [Tundra] Regions>",
             "Becomes [Plains] when adjacent to [River]",
-            "Every [16] tiles with this terrain will receive a major deposit of a strategic resource."]
+            "Every [16] tiles with this terrain will receive a major deposit of a strategic resource.",
+			"Units ending their turn on this terrain take [10] damage"]
 	},
 	{
 		"name": "Desert",
@@ -104,7 +105,8 @@
             "A Region is formed with at least [25]% [Desert] tiles, with priority [4]",
             "Becomes [Flood plains] when adjacent to [River]",
             "Considered [Undesirable] when determining start locations <in all except [Desert] Regions>",
-            "Every [13] tiles with this terrain will receive a major deposit of a strategic resource."]
+            "Every [13] tiles with this terrain will receive a major deposit of a strategic resource.",
+			"Units ending their turn on this terrain take [10] damage"]
 	},
 	{
 		"name": "Lakes",
@@ -127,13 +129,12 @@
 	{
 		"name": "Mountain",
 		"type": "Land",
-		"impassable": true,
 		"defenceBonus": 0.25,
 		"RGB": [102, 102, 102],
 		"uniques": ["Rough terrain",
             "Has an elevation of [2] for visibility calculations",
             "Occurs in chains at high elevations",
-            "Units ending their turn on this terrain take [50] damage",
+            "Units ending their turn on this terrain take [100] damage",
             "Always Fertility [-2] for Map Generation",
             "Considered [Undesirable] when determining start locations"]
 	},
@@ -152,7 +153,8 @@
             "Considered [Undesirable] when determining start locations",
             "Becomes [Tundra] when adjacent to [River]",
             "Every [17] tiles with this terrain will receive a major deposit of a strategic resource.",
-            "Never receives any resources <in [Hill] tiles>"]
+            "Never receives any resources <in [Hill] tiles>",
+			"Units ending their turn on this terrain take [20] damage"]
 	},
 
 	// Terrain features
@@ -175,7 +177,8 @@
 					"Starts in regions of this type receive an extra [Sheep]",
 					"Considered [Desirable] when determining start locations",
 					"Considered [Production] when determining start locations",
-					"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."]
+					"Every [22] tiles with this terrain will receive a major deposit of a strategic resource.",
+					"Units ending their turn on this terrain take [5] damage"]
 	},
 	{
 		"name": "Forest",
@@ -198,7 +201,8 @@
 					"Considered [Production] when determining start locations",
 					"Considered [Food] when determining start locations <in [Forest] Regions>",
 					"Considered [Food] when determining start locations <in [Tundra] Regions>",
-					"Every [39] tiles with this terrain will receive a major deposit of a strategic resource."],
+					"Every [39] tiles with this terrain will receive a major deposit of a strategic resource.",
+					"Units ending their turn on this terrain take [5] damage"],
 		"civilopediaText": [{"text":"A Camp can be built here without cutting it down", "link":"Improvement/Camp"}]
 	},
 	{
@@ -220,7 +224,8 @@
 			"A Region can not contain more [Forest] tiles than [Jungle] tiles",
 			"Considered [Food] when determining start locations <in all except [Grassland] Regions>",
 			"Considered [Desirable] when determining start locations <in all except [Grassland] Regions>",
-			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
+			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource.",
+			"Units ending their turn on this terrain take [10] damage"
 		]
 	},
 	{
@@ -233,7 +238,8 @@
 		"occursOn": ["Grassland"],
 		"uniques": ["Rare feature",
 					"[-2] to Fertility for Map Generation",
-					"Every [9] tiles with this terrain will receive a major deposit of a strategic resource."],
+					"Every [9] tiles with this terrain will receive a major deposit of a strategic resource.",
+					"Units ending their turn on this terrain take [30] damage"],
 		"civilopediaText": [{"text":"Only Polders can be built here", "link":"Improvement/Polder"}]
 	},
 	{
@@ -241,7 +247,7 @@
 		"type": "TerrainFeature",
 		"movementCost": 2,
 		"unbuildable": true,
-		"uniques": ["Nullifies all other stats this tile provides", "Doesn't generate naturally"],
+		"uniques": ["Nullifies all other stats this tile provides", "Doesn't generate naturally","Units ending their turn on this terrain take [100] damage"],
 		// For map editor only - the generator won't place it without code or enabling uniques
 		// If the map generator is ever updated to always take these into account, it should also take the "Doesn't generate naturally" unique into account
 		"occursOn": ["Grassland","Plains","Desert","Tundra","Snow","Forest","Jungle","Hill","Flood plains","Marsh","Oasis"],
@@ -279,7 +285,8 @@
 		"occursOn": ["Desert"],
 		"uniques": ["Always Fertility [5] for Map Generation",
 					"Considered [Food] when determining start locations",
-					"Considered [Desirable] when determining start locations"]
+					"Considered [Desirable] when determining start locations",
+					"Units ending their turn on this terrain take [30] damage"]
 	},
 	{
 		"name": "Ice",
