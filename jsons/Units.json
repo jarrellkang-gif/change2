@@ -625,7 +625,7 @@
 					"Heals [110] damage if it kills a unit",
 					"Unit will heal every turn, even if it performs an action",
 					"[-70]% Strength <when attacking>",
-					"[+150]% Strength <when attacking>",",
+					"[+150]% Strength <when attacking>",
 					"May capture killed [Wounded] units",
 					"[+100]% XP gained from combat",
 					"[+40]% Strength bonus for [Friendly] units within [2] tiles",
