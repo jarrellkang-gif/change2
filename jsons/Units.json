@@ -138,9 +138,6 @@
 	},
 
 
-
-
-	
 	/* Classical Era */
 
 	{
@@ -161,7 +158,7 @@
 		"name": "Heavy Infantry",
 		"unitType": "Sword",
 		"movement": 2,
-		"strength": 30,
+		"strength": 15,
 		"cost": 200,
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Gunpowder",
@@ -189,7 +186,7 @@
 		"name": "Heavy Horseman",
 		"unitType": "Mounted",
 		"movement": 4,
-		"strength": 35,
+		"strength": 17,
 		"cost": 300,
 		"requiredTech": "Horseback Riding",
 		"requiredResource": "Horses",
@@ -216,7 +213,7 @@
 		"name": "War Elephant",
 		"unitType": "Mounted",
 		"movement": 4,
-		"strength": 40,
+		"strength": 20,
 		"cost": 600,
 		"uniques": ["[-60]% Strength <vs cities> <when attacking>","[+300]% Strength <vs [Wounded] units> <when attacking>",
 		"Unable to capture cities","[+200]% maintenance costs","Cannot be purchased","[+100]% to Flank Attack bonuses",
