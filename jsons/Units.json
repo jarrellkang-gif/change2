@@ -194,86 +194,35 @@
 	},
 
 
+
+
+	
 	/* Classical Era */
 	{
-		"name": "Horseman",
+		"name": "Light Horseman",
+		"unitType": "Mounted",
+		"movement": 5,
+		"strength": 12,
+		"cost": 150,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"uniques": ["No defensive terrain bonus","[-70]% Strength <vs cities> <when attacking>","[+50]% Strength <vs [Wounded] units> <when attacking>"],
+		"attackSound": "horse"
+	},
+
+	{
+		"name": "Heavy Horseman",
 		"unitType": "Mounted",
 		"movement": 4,
-		"strength": 12,
-		"cost": 75,
+		"strength": 20,
+		"cost": 300,
 		"requiredTech": "Horseback Riding",
 		"requiredResource": "Horses",
-		"upgradesTo": "Knight",
-		"obsoleteTech": "Chivalry",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>" ],
-		"hurryCostModifier": 20,
+		"uniques": ["No defensive terrain bonus","[-70]% Strength <vs cities> <when attacking>","[+100]% Strength <vs [Wounded] units> <when attacking>"],
 		"attackSound": "horse"
 	},
-	{
-		"name": "Companion Cavalry",
-		"unitType": "Mounted",
-		"uniqueTo": "Greece",
-		"replaces": "Horseman",
-		"movement": 5,
-		"strength": 14,
-		"cost": 75,
-		"requiredTech": "Horseback Riding",
-		"upgradesTo": "Knight",
-		"obsoleteTech": "Chivalry",
-		"promotions": ["Great Generals I"],
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>"],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},
-	{
-		"name": "African Forest Elephant",
-		"unitType": "Mounted",
-		"uniqueTo": "Carthage",
-		"replaces": "Horseman",
-		"movement": 3,
-		"strength": 14,
-		"cost": 100,
-		"requiredTech": "Horseback Riding",
-		"upgradesTo": "Knight",
-		"obsoleteTech": "Chivalry",
-		"promotions": ["Great Generals II"],
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>",
-			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles"],
-		"hurryCostModifier": 20,
-		"attackSound": "elephant"
-	},
-	{
-		"name": "Cataphract",
-		"unitType": "Mounted",
-		"uniqueTo": "Byzantium",
-		"replaces": "Horseman",
-		"movement": 3,
-		"strength": 15,
-		"cost": 75,
-		"requiredTech": "Horseback Riding",
-		"upgradesTo": "Knight",
-		"obsoleteTech": "Chivalry",
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking", "[-25]% Strength <vs cities> <when attacking>"],
-		"hurryCostModifier": 20,
-		"attackSound": "horse"
-	},
-	{
-		"name": "Catapult",
-		"unitType": "Siege",
-		"movement": 2,
-		"strength": 7,
-		"rangedStrength": 8,
-		"cost": 75,
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Physics",
-		"upgradesTo": "Trebuchet",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
-			"Must set up to ranged attack", "[-1] Sight", "Never appears as a Barbarian unit"],
-		"hurryCostModifier": 20,
-		"attackSound": "throw"
-	},
+
+	
 	{
 		"name": "Ballista",
 		"unitType": "Siege",
@@ -291,62 +240,38 @@
 		"hurryCostModifier": 20,
 		"attackSound": "throw"
 	},
+	
 	{
-		"name": "Composite Bowman",
-		"unitType": "Archery",
-		"movement": 2,
-		"strength": 7,
-		"rangedStrength": 11,
-		"cost": 75,
-		"requiredTech": "Construction",
-		"obsoleteTech": "Machinery",
-		"upgradesTo": "Crossbowman",
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Swordsman",
+		"name": "Light Infantry",
 		"unitType": "Sword",
-		"movement": 2,
-		"strength": 14,
-		"cost": 75,
-		"requiredTech": "Iron Working",
-		"upgradesTo": "Longswordsman",
-		"obsoleteTech": "Steel",
-		"requiredResource": "Iron",
-		"hurryCostModifier": 20,
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Legion",
-		"unitType": "Sword",
-		"uniqueTo": "Rome",
-		"replaces": "Swordsman",
 		"movement": 2,
 		"strength": 17,
-		"cost": 75,
+		"cost": 100,
 		"requiredTech": "Iron Working",
 		"upgradesTo": "Longswordsman",
 		"obsoleteTech": "Gunpowder",
 		"requiredResource": "Iron",
 		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles"],
-		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
+
 	{
-		"name": "Mohawk Warrior",
+		"name": "Heavy Infantry",
 		"unitType": "Sword",
-		"uniqueTo": "Iroquois",
-		"replaces": "Swordsman",
 		"movement": 2,
-		"strength": 14,
-		"cost": 75,
+		"strength": 30,
+		"cost": 200,
 		"requiredTech": "Iron Working",
 		"upgradesTo": "Longswordsman",
 		"obsoleteTech": "Gunpowder",
-		"hurryCostModifier": 20,
-		"promotions": ["[Mohawk Warrior] ability"],
+		"requiredResource": "Iron",
+		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles"],
 		"attackSound": "metalhit"
 	},
+
+
+
+	
 
 	// Medieval Era
 	{
