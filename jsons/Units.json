@@ -63,21 +63,11 @@
 		"strength": 8,
 		"cost": 150,
 		"requiredTech": "Agriculture",
+		"uniques": ["Cannot be purchased"],
 		"obsoleteTech": "Metal Casting",
 		"attackSound": "nonmetalhit"
 	},
 
-	{
-		"name": "Archer",
-		"unitType": "Archery",
-		"movement": 2,
-		"strength": 5,
-		"rangedStrength": 7,
-		"cost": 300,
-		"uniques": ["[1] Range"],
-		"attackSound": "arrow"
-	},
-	
 	{
 		"name": "Trireme",
 		"unitType": "Melee Water",
@@ -117,51 +107,10 @@
 		//Barbarian unique naval unit, weaker and slower than Trireme.
 	},
 
-	{
-		"name": "Chariot Archer",
-		"unitType": "Archery",
-		"movement": 4,
-		"strength": 2,
-		"rangedStrength": 10,
-		"cost": 400,
-		"requiredTech": "The Wheel",
-		"requiredResource": "Horses",
-		"uniques": ["Rough terrain penalty", "Never appears as a Barbarian unit","Can move after attacking"],
-		"attackSound": "arrow"
-	},
-	{
-		"name": "War Chariot",
-		"unitType": "Mounted",
-		"movement": 5,
-		"strength": 6,
-		"rangedStrength": 10,
-		"cost": 56,
-		"requiredTech": "The Wheel",
-		"requiredResource": "Horses",
-		"uniques": ["No defensive terrain bonus", "Rough terrain penalty","[+50]% Strength <vs [Wounded] units> <when attacking>"],
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Horse Archer",
-		"unitType": "Archery",
-		"movement": 4,
-		"strength": 7,
-		"rangedStrength": 10,
-		"cost": 400,
-		"uniques": ["No defensive terrain bonus"],
-		"attackSound": "arrow"
-	},
 
 
-	{
-		"name": "War Elephant",
-		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 7,
-		"cost": 400,
-		"uniques": ["No defensive terrain bonus"],
-		"attackSound": "arrow"
-	},
+
+
 	
 	{
 		"name": "Battering Ram",
@@ -187,61 +136,34 @@
 		"attackSound": "throw"
 	},
 
+	{
+		"name": "Archer",
+		"unitType": "Archery",
+		"movement": 3,
+		"strength": 2,
+		"rangedStrength": 7,
+		"cost": 200,
+		"uniques": ["[1] Range","Can move after attacking","Withraws before melee combat","Unable to capture cities", "Cannot be purchased"],
+		"attackSound": "arrow"
+	},
+
 
 
 
 	
 	/* Classical Era */
-	{
-		"name": "Light Horseman",
-		"unitType": "Mounted",
-		"movement": 5,
-		"strength": 12,
-		"cost": 150,
-		"requiredTech": "Horseback Riding",
-		"requiredResource": "Horses",
-		"uniques": ["No defensive terrain bonus","[-70]% Strength <vs cities> <when attacking>","[+50]% Strength <vs [Wounded] units> <when attacking>"],
-		"attackSound": "horse"
-	},
 
-	{
-		"name": "Heavy Horseman",
-		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 20,
-		"cost": 300,
-		"requiredTech": "Horseback Riding",
-		"requiredResource": "Horses",
-		"uniques": ["No defensive terrain bonus","[-70]% Strength <vs cities> <when attacking>","[+100]% Strength <vs [Wounded] units> <when attacking>"],
-		"attackSound": "horse"
-	},
-
-	{
-		"name": "Ballista",
-		"unitType": "Siege",
-		"movement": 2,
-		"strength": 8,
-		"rangedStrength": 10,
-		"cost": 75,
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Physics",
-		"upgradesTo": "Trebuchet",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
-			"Must set up to ranged attack", "[-1] Sight"],
-		"hurryCostModifier": 20,
-		"attackSound": "throw"
-	},
-	
 	{
 		"name": "Light Infantry",
 		"unitType": "Sword",
 		"movement": 2,
-		"strength": 17,
+		"strength": 10,
 		"cost": 100,
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Gunpowder",
 		"requiredResource": "Iron",
-		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles"],
+		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles",
+		"[+5]% Strength bonus for [Friendly] units within [1] tiles"],
 		"attackSound": "metalhit"
 	},
 
@@ -254,9 +176,101 @@
 		"requiredTech": "Iron Working",
 		"obsoleteTech": "Gunpowder",
 		"requiredResource": "Iron",
-		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles"],
+		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles", "[+100]% maintenance costs",
+		"Cannot be purchased","[+10]% Strength bonus for [Friendly] units within [1] tiles"],
 		"attackSound": "metalhit"
 	},
+
+	{
+		"name": "Light Horseman",
+		"unitType": "Mounted",
+		"movement": 6,
+		"strength": 12,
+		"cost": 200,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"uniques": ["[-70]% Strength <vs cities> <when attacking>","[+50]% Strength <vs [Wounded] units> <when attacking>",
+		"Unable to capture cities","[+100]% maintenance costs","Cannot be purchased","[+40]% to Flank Attack bonuses",
+		"[-30]% Strength <when defending>","[+20]% Strength bonus for [Friendly] units within [1] tiles"],
+		"attackSound": "horse"
+	},
+
+	{
+		"name": "Heavy Horseman",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 35,
+		"cost": 300,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"uniques": ["[-60]% Strength <vs cities> <when attacking>","[+100]% Strength <vs [Wounded] units> <when attacking>",
+		"Unable to capture cities","[+200]% maintenance costs","Cannot be purchased","[+100]% to Flank Attack bonuses",
+		"[-25]% Strength <when defending>"],
+		"attackSound": "horse"
+	},
+	
+	{
+		"name": "Horse Archer",
+		"unitType": "Archery",
+		"movement": 6,
+		"strength": 7,
+		"rangedStrength": 9,
+		"cost": 300,
+		"uniques": ["[-60]% Strength <vs cities> <when attacking>","[+50]% Strength <vs [Wounded] units> <when attacking>",
+		"Unable to capture cities","[+100]% maintenance costs","Cannot be purchased","[+10]% to Flank Attack bonuses",
+		"[-100]% Strength <when defending>","Can move after attacking","[1] Range"],
+		"attackSound": "arrow"
+	},
+
+	{
+		"name": "War Elephant",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 40,
+		"cost": 600,
+		"uniques": ["[-60]% Strength <vs cities> <when attacking>","[+300]% Strength <vs [Wounded] units> <when attacking>",
+		"Unable to capture cities","[+200]% maintenance costs","Cannot be purchased","[+100]% to Flank Attack bonuses",
+		"[-300]% Strength <when defending>"],
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Ivory",
+		"attackSound": "elephant"
+	},
+
+	{
+		"name": "Ballista",
+		"unitType": "Siege",
+		"movement": 1,
+		"strength": 10,
+		"rangedStrength": 10,
+		"cost": 75,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Physics",
+		"uniques": ["[+100]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
+			"Must set up to ranged attack", "[-1] Sight"],
+		"attackSound": "throw"
+	},
+
+	{
+		"name": "Catapult",
+		"unitType": "Siege",
+		"movement": 1,
+		"strength": 0,
+		"rangedStrength": 10,
+		"cost": 75,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Physics",
+		"uniques": ["[+300]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
+			"Must set up to ranged attack", "[-1] Sight","Can only attack [City] units"],
+		"attackSound": "throw"
+	},
+	
+
+
+
+
+
+
+	
 
 
 	// Medieval Era
@@ -267,7 +281,7 @@
 		"strength": 16,
 		"cost": 90,
 		"requiredTech": "Civil Service",
-		"uniques": ["[+100]% Strength <vs [Mounted] units>"],
+		"uniques": ["[+100]% Strength <vs [Mounted] units>","Cannot be purchased"],
 		"upgradesTo": "Lancer",
 		"obsoleteTech": "Metallurgy",
 		"attackSound": "metalhit"
@@ -295,7 +309,8 @@
 		"cost": 600,
 		"requiredTech": "Chivalry",
 		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit",
+		"Cannot be purchased"],
 		"attackSound": "horse"
 	},
 	
@@ -309,8 +324,7 @@
 		"requiredResource": "Horses",
 		"uniques": ["Founds a new city <on foreign continents>", "[+2] Sight"],
 		"attackSound": "horse"
-		//Conquistador should have no penalty attacking cities
-		//Ability to found new cities can only be used on a foreign continent that does not contain the Spanish capital.
+		//maybe this is the equivalent of a settler but heavily armedd
 	},
 
 	{
