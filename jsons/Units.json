@@ -254,7 +254,7 @@
 		"name": "Catapult",
 		"unitType": "Siege",
 		"movement": 1,
-		"strength": 0,
+		"strength": 1,
 		"rangedStrength": 10,
 		"cost": 75,
 		"requiredTech": "Mathematics",
