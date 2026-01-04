@@ -124,17 +124,7 @@
 		"attackSound": "throw"
 	},
 
-	{
-		"name": "Siege Tower",
-		"unitType": "Siege", // You might expect this to be a siege unit, but apparently it is not
-		"movement": 1,
-		"strength": 20,
-		"cost": 75,
-		"requiredTech": "Bronze Working",
-		"uniques": ["[+500]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "[-33]% Strength <when defending>",
-		"[-1] Sight", "Can only attack [City] units"],
-		"attackSound": "throw"
-	},
+
 
 	{
 		"name": "Archer",
@@ -261,6 +251,19 @@
 		"obsoleteTech": "Physics",
 		"uniques": ["[+300]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
 			"Must set up to ranged attack", "[-1] Sight","Can only attack [City] units"],
+		"attackSound": "throw"
+	},
+
+
+	{
+		"name": "Siege Tower",
+		"unitType": "Siege", // You might expect this to be a siege unit, but apparently it is not
+		"movement": 1,
+		"strength": 20,
+		"cost": 75,
+		"requiredTech": "Iron Working",
+		"uniques": ["[+500]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "[-33]% Strength <when defending>",
+		"[-1] Sight", "Can only attack [City] units"],
 		"attackSound": "throw"
 	},
 	
