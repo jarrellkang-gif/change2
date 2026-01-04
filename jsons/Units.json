@@ -159,7 +159,7 @@
 		"rangedStrength": 11,
 		"cost": 500,
 		"requiredTech": "The Wheel",
-		"uniques": ["No defensive terrain bonus","[+90]% Strength <vs [Wounded] units> <when attacking>","[-90% Strength <when defending>",
+		"uniques": ["No defensive terrain bonus","[+90]% Strength <vs [Wounded] units> <when attacking>","[-90]% Strength <when defending>",
 		,"[+200]% maintenance costs"],
 		"attackSound": "elephant"
 	},
