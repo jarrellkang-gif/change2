@@ -536,23 +536,6 @@
 		"attackSound": "horse"
 	},
 	{
-		"name": "Sipahi",
-		"unitType": "Mounted",
-		"replaces": "Lancer",
-		"uniqueTo": "The Ottomans",
-		"movement": 5,
-		"strength": 25,
-		"cost": 185,
-		"requiredTech": "Metallurgy",
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>",
-			"[+1] Sight"],
-		"promotions": ["[Sipahi] ability","Formation I"],
-		"upgradesTo": "Anti-Tank Gun",
-		"obsoleteTech": "Combined Arms",
-		"attackSound": "horse"
-	},
-	{
 		"name": "Cannon",
 		"unitType": "Siege",
 		"movement": 2,
