@@ -529,7 +529,7 @@
 	},
 
 	{
-		"name": "Cuirassiers",
+		"name": "Cuirassier",
 		"unitType": "Mounted",
 		"movement": 7,
 		"strength": 21,
