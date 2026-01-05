@@ -119,7 +119,7 @@
 		"strength": 10,
 		"cost": 100,
 		"requiredTech": "Iron Working", //goods
-		"obsoleteTech": "Economics",
+		"obsoleteTech": "Gunpowder",
 		"upgradesTo": "Musketeer", //valid, coz they will all be armed
 		"uniques": ["Can build [Road] improvements on tiles",
 					"Can build [Fort] improvements on tiles",
@@ -135,7 +135,7 @@
 		"strength": 15,
 		"cost": 200,
 		"requiredTech": "Iron Working", //valid
-		"obsoleteTech": "Economics", //same as light infantry
+		"obsoleteTech": "Gunpowder", //same as light infantry
 		"requiredResource": "Iron",
 		"uniques": ["Can build [Road] improvements on tiles",
 					"Can build [Fort] improvements on tiles",
@@ -152,7 +152,7 @@
 		"strength": 12,
 		"cost": 200,
 		"requiredTech": "Horseback Riding", //obviously
-		"obsoleteTech": "Military Science", //coz of formalization?
+		"obsoleteTech": "Economics", //coz of formalization?
 		"upgradesTo": "Light Cavalry", //yep
 		"requiredResource": "Horses",
 		"uniques": ["[-70]% Strength <vs cities> <when attacking>",
@@ -193,8 +193,8 @@
 		"cost": 300,
 		"requiredTech": "Horseback Riding", //duh
 		"requiredResource": "Horses", //duh
-		"obsoleteTech": "Military Science", //coz of formalization?
-		"upgradesTo": "Heavy Cavalry", //yep
+		"obsoleteTech": "Economics", //coz of formalization?
+		"upgradesTo": "Cuirassier", //yep
 		"uniques": ["[-60]% Strength <vs cities> <when attacking>",
 					"[+100]% Strength <vs [Wounded] units> <when attacking>",
 					"Unable to capture cities",
@@ -299,7 +299,7 @@
 					"[-1] Sight",
 					"Can only attack [City] units",
 					"[+100]% Strength <vs [Archery]> <when defending>",
-					"Consumes [3] Iron",
+					"Consumes [3] [Iron]",
 					"Cannot be purchased"],
 		"attackSound": "throw"
 	},
@@ -534,7 +534,7 @@
 		"movement": 7,
 		"strength": 21,
 		"cost": 250,
-		"requiredTech": "Metallurgy",
+		"requiredTech": "Economics",
 		"obsoleteTech": "Combustion",
 		"requiredResource": "Horses",
 		"uniques":["[-60]% Strength <vs cities> <when attacking>",
