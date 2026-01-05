@@ -343,7 +343,7 @@
 					"Cannot be purchased",
 					"[+50]% Strength bonus for [Military] units within [1] tiles",
 					"[+50]% Strength <vs [Mounted] units>",
-					"Consumes [1] [Gold]",
+					"Consumes [1] [Gold Ore]",
 					"Consumes [1] [Silver]",
 					"Consumes [3] [Iron]"],
 		"attackSound": "horse"
