@@ -215,7 +215,7 @@
 					"Cannot be purchased",
 					"[+100]% to Flank Attack bonuses",
 					"[-25]% Strength <when defending>",
-					"Consumes [1] Iron"],
+					"Consumes [1] [Iron]"],
 		"attackSound": "horse"
 	},
 	
@@ -304,7 +304,7 @@
 					"[-33]% Strength <when defending>",
 					"[-1] Sight",
 					"Can only attack [City] units",
-					"[+100]% Strength <vs [Archery] <when defending>"],
+					"[+100]% Strength <vs [Archery]> <when defending>"],
 		"attackSound": "throw"
 	},
 	
@@ -342,10 +342,10 @@
 		"uniques": ["Never appears as a Barbarian unit",
 					"Cannot be purchased",
 					"[+50]% Strength bonus for [Military] units within [1] tiles",
-					"[+50%] Strength <vs [Mounted] units>",
-					"Consumes [1] Gold",
-					"Consumes [1] Silver",
-					"Consumes [3] Iron"],
+					"[+50]% Strength <vs [Mounted] units>",
+					"Consumes [1] [Gold]",
+					"Consumes [1] [Silver]",
+					"Consumes [3] [Iron]"],
 		"attackSound": "horse"
 	},
 
