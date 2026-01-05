@@ -2,7 +2,9 @@
 
 	// Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/gods-and-kings/
 
-	/* Ancient Era */
+
+/* CIVILIANS ----------------------------------------------------------------------------------------------------------------------------*/
+	
 	{
 		"name": "Worker",
 		"unitType": "Civilian",
@@ -42,87 +44,69 @@
 		"attackSound": "nonmetalhit"
 	},
 
-	
+
+
+/* ANCIENT ERA----------------------------------------------------------------------------------------------------------------------------*//
+
+//LOW TIER	
 	{
 		"name": "Light Warrior",
 		"unitType": "Sword",
 		"movement": 2,
 		"strength": 8,
 		"cost": 100,
-		"requiredTech": "Agriculture",
-		"obsoleteTech": "Metal Casting",
+		"requiredTech": "Agriculture", //goods
+		"obsoleteTech": "Iron Working", //made obsolete by light infantry
+		"upgradesTo": "Light Infantry", //confirmed
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
 			{"text": "This is your basic, club-swinging fighter."}
 		]
 	},
 
+//MEDIUM TIER
 	{
 		"name": "Brute Warrior",
 		"unitType": "Sword",
 		"movement": 2,
-		"strength": 8,
+		"strength": 11,
 		"cost": 150,
-		"requiredTech": "Agriculture",
-		"uniques": ["Cannot be purchased"],
-		"obsoleteTech": "Metal Casting",
+		"requiredTech": "Agriculture",  //goods
+		"uniques": ["Cannot be purchased"], //i guess so
+		"obsoleteTech": "Iron Working", //made obsolete by heavy infantry
 		"attackSound": "nonmetalhit"
 	},
 
-	{
-		"name": "Trireme",
-		"unitType": "Melee Water",
-		"movement": 4,
-		"strength": 10,
-		"cost": 45,
-		"requiredTech": "Sailing",
-		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit"],
-		"upgradesTo": "Caravel",
-		"obsoleteTech": "Astronomy",
-		"attackSound": "nonmetalhit"
-	},
-
-	{
-		"name": "Quinquereme",
-		"unitType": "Melee Water",
-		"movement": 4,
-		"strength": 13,
-		"cost": 45,
-		"requiredTech": "Sailing",
-		"uniques": ["Cannot enter ocean tiles"],
-		"upgradesTo": "Caravel",
-		"obsoleteTech": "Astronomy",
-		"attackSound": "nonmetalhit"
-	},
-	
+//NAVAL
 	{
 		"name": "Galley",
 		"unitType": "Melee Water",
 		"movement": 3,
 		"strength": 7,
 		"cost": 40,
-		"uniques": ["Cannot enter ocean tiles"],
+		"uniques": ["Cannot enter ocean tiles","Never appears as a Barbarian unit"],
 		"upgradesTo": "Trireme",
-		"obsoleteTech": "Astronomy",
+		"requiredTech": "Sailing", //okay
+		"obsoleteTech": "Engineering", //yeah
 		"attackSound": "nonmetalhit"
 		//Barbarian unique naval unit, weaker and slower than Trireme.
 	},
 
-
-
-
-
 	
 	{
 		"name": "Battering Ram",
-		"unitType": "Siege", // You might expect this to be a siege unit, but apparently it is not
+		"unitType": "Siege",
 		"movement": 1,
-		"strength": 10,
+		"strength": 5,
 		"cost": 75,
-		"requiredTech": "Bronze Working",
-		"uniques": ["[+300]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "[-33]% Strength <when defending>",
-		"[-1] Sight", "Can only attack [City] units"],
-		"attackSound": "throw"
+		"requiredTech": "Bronze Working", //good
+		"uniques": ["[+300]% Strength <vs cities> <when attacking>", //this is to differntiate vs non-cities
+					"No defensive terrain bonus",
+					"[-70]% Strength <when defending>",
+					"[-1] Sight", 
+					"Can only attack [City] units"],
+		"attackSound": "nonmetalhit",
+		"obsoleteTech": "Chemistry" //not sure with this, just note that whatever makes battering ram obsolete will make trebuchet also obsolete
 	},
 
 	
@@ -136,8 +120,9 @@
 		"movement": 2,
 		"strength": 10,
 		"cost": 100,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Gunpowder",
+		"requiredTech": "Iron Working", //goods
+		"obsoleteTech": "Economics",
+		"upgradesTo": "Musketeer", //valid, coz they will all be armed
 		"uniques": ["Can build [Road] improvements on tiles",
 					"Can build [Fort] improvements on tiles",
 					"[+5]% Strength bonus for [Friendly] units within [1] tiles",
@@ -151,8 +136,8 @@
 		"movement": 2,
 		"strength": 15,
 		"cost": 200,
-		"requiredTech": "Iron Working",
-		"obsoleteTech": "Gunpowder",
+		"requiredTech": "Iron Working", //valid
+		"obsoleteTech": "Economics", //same as light infantry
 		"requiredResource": "Iron",
 		"uniques": ["Can build [Road] improvements on tiles",
 					"Can build [Fort] improvements on tiles",
@@ -168,7 +153,9 @@
 		"movement": 7,
 		"strength": 12,
 		"cost": 200,
-		"requiredTech": "Horseback Riding",
+		"requiredTech": "Horseback Riding", //obviously
+		"obsoleteTech": "Military Science", //coz of formalization?
+		"upgradesTo": "Light Cavalry", //yep
 		"requiredResource": "Horses",
 		"uniques": ["[-70]% Strength <vs cities> <when attacking>",
 					"[+50]% Strength <vs [Wounded] units> <when attacking>",
@@ -203,11 +190,13 @@
 	{
 		"name": "Heavy Horseman",
 		"unitType": "Mounted",
-		"movement": 4,
+		"movement": 5,
 		"strength": 17,
 		"cost": 300,
-		"requiredTech": "Horseback Riding",
-		"requiredResource": "Horses",
+		"requiredTech": "Horseback Riding", //duh
+		"requiredResource": "Horses", //duh
+		"obsoleteTech": "Military Science", //coz of formalization?
+		"upgradesTo": "Heavy Cavalry", //yep
 		"uniques": ["[-60]% Strength <vs cities> <when attacking>",
 					"[+100]% Strength <vs [Wounded] units> <when attacking>",
 					"Unable to capture cities",
@@ -227,6 +216,8 @@
 		"rangedStrength": 7,
 		"cost": 300,
 		"requiredResource": "Horses",
+		"requiredTech": "Horseback Riding",
+		"obsoleteTech": "Replaceable Parts", //ngl anythign just to not make ww1 soldiers fight mongolians
 		"uniques": ["[-60]% Strength <vs cities> <when attacking>",
 					"[+50]% Strength <vs [Wounded] units> <when attacking>",
 					"Unable to capture cities",
@@ -253,7 +244,7 @@
 					"[+100]% to Flank Attack bonuses",
 					"[-300]% Strength <when defending>"],
 		"requiredTech": "Horseback Riding",
-		"requiredResource": "Ivory",
+		"requiredResource": "Ivory", //coz they need elephants
 		"attackSound": "elephant"
 	},
 
@@ -265,6 +256,7 @@
 		"rangedStrength": 10,
 		"cost": 200,
 		"requiredTech": "Mathematics",
+		"requiredResource": "Iron", //why not
 		"obsoleteTech": "Chemistry",
 		"uniques": ["[+100]% Strength <vs cities> <when attacking>",
 					"No defensive terrain bonus",
@@ -282,6 +274,7 @@
 		"cost": 200,
 		"requiredTech": "Mathematics",
 		"obsoleteTech": "Chemistry",
+		"requiredResource": "Iron",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
 					"No defensive terrain bonus",
 					"Must set up to ranged attack",
@@ -304,8 +297,36 @@
 					"[-33]% Strength <when defending>",
 					"[-1] Sight",
 					"Can only attack [City] units",
-					"[+100]% Strength <vs [Archery]> <when defending>"],
+					"[+100]% Strength <vs [Archery]> <when defending>",
+					"Consumes [3] Iron"],
 		"attackSound": "throw"
+	},
+
+
+	{
+		"name": "Trireme",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 10,
+		"cost": 45,
+		"requiredTech": "Engineering",
+		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit"],
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
+	},
+
+	{
+		"name": "Quinquereme",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 13,
+		"cost": 45,
+		"requiredTech": "Engineering",
+		"uniques": ["Cannot enter ocean tiles","Never appears as a Barbarian unit"],
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
 	},
 	
 
@@ -334,10 +355,11 @@
 	{
 		"name": "Knight",
 		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 22,
+		"movement": 7,
+		"strength": 27,
 		"cost": 400,
 		"requiredTech": "Chivalry",
+		"obsoleteTech": "Industrialization",
 		"requiredResource": "Horses",
 		"uniques": ["Never appears as a Barbarian unit",
 					"Cannot be purchased",
@@ -359,7 +381,9 @@
 		"rangedStrength": 18,
 		"cost": 300,
 		"requiredTech": "Machinery",
-		"obsoleteTech": "Industrialization",
+		"requiredResource": "Iron",
+		"upgradesTo": "Musketeer",
+		"obsoleteTech": "Gunpowder",
 		"uniques": ["Can move after attacking",
 					"Withraws before melee combat",
 					"Unable to capture cities",
@@ -368,7 +392,6 @@
 		"attackSound": "crossbow"
 	},
 
-	//Longbowman takes even longer to make than archers, and welp, not mounted
 	{
 		"name": "Longbowman",
 		"unitType": "Archery",
@@ -378,7 +401,8 @@
 		"rangedStrength": 15,
 		"cost": 300,
 		"requiredTech": "Machinery",
-		"obsoleteTech": "Industrialization",
+		"obsoleteTech": "Gunpowder",
+		"upgradesTo": "Musketeer",
 		"uniques": ["Can move after attacking",
 					"Withraws before melee combat",
 					"Unable to capture cities",
@@ -445,6 +469,98 @@
 
 	// Rennaisance Era
 
+	
+	{
+		"name": "Musketeer",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 28,
+		"cost": 150,
+		"requiredTech": "Gunpowder",
+		"obsoleteTech": "Economice",
+		"attackSound": "shot"
+	},
+	
+	{
+		"name": "Lancer",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 15,
+		"cost": 185,
+		"requiredTech": "Metallurgy",
+		"requiredResource": "Horses",
+		"uniques":["[-90]% Strength <vs cities> <when attacking>",
+					"[+300]% Strength <vs [Wounded] units> <when attacking>",
+					"Unable to capture cities",
+					"[+400]% maintenance costs",
+					"Cannot be purchased",
+					"[+100]% to Flank Attack bonuses",
+					"[-80]% Strength <when defending>",
+					"Consumes [1] [Iron]"],
+		"obsoleteTech": "Combined Arms",
+		"attackSound": "horse"
+	},
+
+	{
+		"name": "Light Cavalry",
+		"unitType": "Mounted",
+		"movement": 8,
+		"strength": 15,
+		"cost": 200,
+		"requiredTech": "Economics",
+		"obsoleteTech": "Combustion",
+		"requiredResource": "Horses",
+		"uniques":["[-60]% Strength <vs cities> <when attacking>",
+					"[+50]% Strength <vs [Wounded] units> <when attacking>",
+					"Unable to capture cities",
+					"[+300]% maintenance costs",
+					"Cannot be purchased",
+					"[+100]% to Flank Attack bonuses",
+					"[-25]% Strength <when defending>",
+					"Consumes [1] [Iron]"],
+		"attackSound": "cavalry"
+	},
+
+	{
+		"name": "Cuirassiers",
+		"unitType": "Mounted",
+		"movement": 7,
+		"strength": 21,
+		"cost": 250,
+		"requiredTech": "Metallurgy",
+		"obsoleteTech": "Combustion",
+		"requiredResource": "Horses",
+		"uniques":["[-60]% Strength <vs cities> <when attacking>",
+					"[+100]% Strength <vs [Wounded] units> <when attacking>",
+					"Unable to capture cities",
+					"[+400]% maintenance costs",
+					"Cannot be purchased",
+					"[+100]% to Flank Attack bonuses",
+					"[-25]% Strength <when defending>",
+					"Consumes [1] [Iron]"],
+		"attackSound": "cavalry"
+	},
+
+	
+	{
+		"name": "Cannon",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 5,
+		"rangedStrength": 30,
+		"cost": 400,
+		"requiredTech": "Chemistry",
+		"obsoleteTech": "Scientific Theory",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"[-1] Sight",
+					"Never appears as a Barbarian unit"],
+		"attackSound": "cannon"
+	},
+
+
+	
 	{
 		"name": "Caravel",
 		"unitType": "Melee Water",
@@ -469,27 +585,6 @@
 		"obsoleteTech": "Combustion",
 		"uniques": ["Cannot enter ocean tiles"],
 		"hurryCostModifier": 30,
-		"attackSound": "cannon"
-	},
-	{
-		"name": "Musketeer",
-		"unitType": "Gunpowder",
-		"movement": 2,
-		"strength": 28,
-		"cost": 150,
-		"requiredTech": "Gunpowder",
-		"obsoleteTech": "Rifling",
-		"attackSound": "shot"
-	},
-	{
-		"name": "Privateer",
-		"unitType": "Melee Water",
-		"movement": 5,
-		"strength": 25,
-		"cost": 150,
-		"requiredTech": "Navigation",
-		"upgradesTo": "Destroyer",
-		"promotions": ["Coastal Raider I", "[Privateer] ability"],
 		"attackSound": "cannon"
 	},
 	{
@@ -521,32 +616,20 @@
 		"hurryCostModifier": 20,
 		"attackSound": "shipCannonVolley"
 	},
+
 	{
-		"name": "Lancer",
-		"unitType": "Mounted",
-		"movement": 4,
+		"name": "Privateer",
+		"unitType": "Melee Water",
+		"movement": 5,
 		"strength": 25,
-		"cost": 185,
-		"requiredTech": "Metallurgy",
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
-		"promotions": ["Formation I"],
-		"upgradesTo": "Anti-Tank Gun",
-		"obsoleteTech": "Combined Arms",
-		"attackSound": "horse"
-	},
-	{
-		"name": "Cannon",
-		"unitType": "Siege",
-		"movement": 2,
-		"strength": 14,
-		"rangedStrength": 20,
-		"cost": 185,
-		"requiredTech": "Chemistry",
-		"obsoleteTech": "Dynamite",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus","Must set up to ranged attack","[-1] Sight","Never appears as a Barbarian unit"],
+		"cost": 150,
+		"requiredTech": "Navigation",
+		"upgradesTo": "Destroyer",
+		"promotions": ["Coastal Raider I", "[Privateer] ability"],
 		"attackSound": "cannon"
 	},
+
+	
 
 	// Industrial Era
 
@@ -554,50 +637,27 @@
 		"name": "Line Infantry",
 		"unitType": "Gunpowder",
 		"movement": 2,
-		"strength": 34,
-		"cost": 225,
+		"strength": 25,
+		"cost": 100,
 		"requiredTech": "Economics",
 		"obsoleteTech": "Replaceable Parts",
 		"attackSound": "shot"
 	},
 	
 	{
-		"name": "Light Cavalry",
-		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 34,
-		"cost": 225,
-		"requiredTech": "Economics",
-		"obsoleteTech": "Combustion",
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>"],
-		"attackSound": "cavalry"
-	},
-
-	{
-		"name": "Cuirassiers",
-		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 34,
-		"cost": 225,
-		"requiredTech": "Metallurgy",
-		"obsoleteTech": "Combustion",
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>"],
-		"attackSound": "cavalry"
-	},
-
-	{
 		"name": "Light Field Gun",
 		"unitType": "Siege",
 		"movement": 2,
-		"strength": 21,
+		"strength": 2,
 		"rangedStrength": 28,
-		"range": 3,
-		"cost": 320,
-		"requiredTech": "Chemistry",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
-			"Must set up to ranged attack","[-1] Sight", "Never appears as a Barbarian unit"],
+		"range": 2,
+		"cost": 200,
+		"requiredTech": "Scientific Theory",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"[-1] Sight",
+					"Never appears as a Barbarian unit"],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "artillery"
 	},
@@ -605,15 +665,16 @@
 	{
 		"name": "Heavy Field Gun",
 		"unitType": "Siege",
-		"movement": 2,
-		"strength": 21,
-		"rangedStrength": 28,
-		"range": 3,
+		"movement": 1,
+		"strength": 2,
+		"rangedStrength": 31,
+		"range": 2,
 		"cost": 320,
-		"requiredTech": "Chemistry",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
-			"Must set up to ranged attack","[-1] Sight", "Never appears as a Barbarian unit"],
-		"promotions": ["Indirect Fire"],
+		"requiredTech": "Scientific Theory",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"Must set up to ranged attack",
+					"[-1] Sight",
+					"Never appears as a Barbarian unit"],
 		"attackSound": "artillery"
 	}
 
@@ -639,7 +700,7 @@
 		"unitType": "Gunpowder",
 		"movement": 2,
 		"strength": 50,
-		"cost": 320,
+		"cost": 110,
 		"requiredTech": "Replaceable Parts",
 		"attackSound": "shot"
 	},
@@ -695,7 +756,7 @@
 		"name": "Landship",
 		"unitType": "Armored",
 		"movement": 4,
-		"strength": 60,
+		"strength": 80,
 		"cost": 350,
 		"requiredTech": "Combustion",
 		"requiredResource": "Oil",
@@ -749,7 +810,25 @@
 		"obsoleteTech": "Radar",
 		"attackSound": "bombing"
 	},
-	
+
+
+	{
+		"name": "Destroyer",
+		"unitType": "Melee Water",
+		"movement": 6,
+		"strength": 55,
+		"interceptRange": 2,
+		"cost": 375,
+		"requiredTech": "Combustion",
+		"uniques": ["Can see invisible [Submarine] units", "[40]% chance to intercept air attacks",
+			"Withdraws before melee combat <with [80]% chance>", "[+100]% Strength <vs [Submarine] units>"],
+		"attackSound": "shipguns"
+	},
+
+
+
+	// Atomic Era
+
 	{
 		"name": "Carrier",
 		"unitType": "Aircraft Carrier",
@@ -789,29 +868,9 @@
 		"attackSound": "machinegun"
 	},
 	
-	{
-		"name": "Destroyer",
-		"unitType": "Melee Water",
-		"movement": 6,
-		"strength": 55,
-		"interceptRange": 2,
-		"cost": 375,
-		"requiredTech": "Combustion",
-		"uniques": ["Can see invisible [Submarine] units", "[40]% chance to intercept air attacks",
-			"Withdraws before melee combat <with [80]% chance>", "[+100]% Strength <vs [Submarine] units>"],
-		"attackSound": "shipguns"
-	},
 
 
 
-
-
-
-
-
-
-	
-	// Atomic Era
 	{
 		"name": "Light Tank",
 		"unitType": "Armored",
