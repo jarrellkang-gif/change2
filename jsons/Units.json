@@ -165,7 +165,7 @@
 	{
 		"name": "Light Horseman",
 		"unitType": "Mounted",
-		"movement": 6,
+		"movement": 7,
 		"strength": 12,
 		"cost": 200,
 		"requiredTech": "Horseback Riding",
@@ -185,11 +185,12 @@
 	{
 		"name": "Archer",
 		"unitType": "Archery",
-		"movement": 3,
+		"range": 1,
+		"movement": 4,
 		"strength": 2,
 		"rangedStrength": 7,
 		"cost": 200,
-		"uniques": ["[1] Range",
+		"uniques": ["[2] Sight",
 					"Can move after attacking",
 					"Withraws before melee combat",
 					"Unable to capture cities",
@@ -221,9 +222,9 @@
 	{
 		"name": "Horse Archer",
 		"unitType": "Archery",
-		"movement": 6,
+		"movement": 7,
 		"strength": 7,
-		"rangedStrength": 9,
+		"rangedStrength": 7,
 		"cost": 300,
 		"requiredResource": "Horses",
 		"uniques": ["[-60]% Strength <vs cities> <when attacking>",
@@ -243,7 +244,7 @@
 		"unitType": "Mounted",
 		"movement": 4,
 		"strength": 20,
-		"cost": 300,
+		"cost": 500,
 		"uniques": ["[-60]% Strength <vs cities> <when attacking>",
 					"[+300]% Strength <vs [Wounded] units> <when attacking>",
 					"Unable to capture cities",
@@ -262,11 +263,13 @@
 		"movement": 1,
 		"strength": 10,
 		"rangedStrength": 10,
-		"cost": 75,
+		"cost": 200,
 		"requiredTech": "Mathematics",
-		"obsoleteTech": "Physics",
-		"uniques": ["[+100]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
-			"Must set up to ranged attack", "[-1] Sight"],
+		"obsoleteTech": "Chemistry",
+		"uniques": ["[+100]% Strength <vs cities> <when attacking>",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"[-1] Sight"],
 		"attackSound": "throw"
 	},
 
@@ -275,12 +278,15 @@
 		"unitType": "Siege",
 		"movement": 1,
 		"strength": 1,
-		"rangedStrength": 10,
-		"cost": 75,
+		"rangedStrength": 15,
+		"cost": 200,
 		"requiredTech": "Mathematics",
-		"obsoleteTech": "Physics",
-		"uniques": ["[+300]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
-			"Must set up to ranged attack", "[-1] Sight","Can only attack [City] units"],
+		"obsoleteTech": "Chemistry",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"[-1] Sight",
+					"Can only attack [City] units"],
 		"attackSound": "throw"
 	},
 
@@ -290,10 +296,15 @@
 		"unitType": "Siege", // You might expect this to be a siege unit, but apparently it is not
 		"movement": 1,
 		"strength": 20,
-		"cost": 75,
+		"cost": 300,
 		"requiredTech": "Iron Working",
-		"uniques": ["[+500]% Strength <vs cities> <when attacking>", "No defensive terrain bonus", "[-33]% Strength <when defending>",
-		"[-1] Sight", "Can only attack [City] units"],
+		"obsoleteTech": "Chemistry",
+		"uniques": ["[+500]% Strength <vs cities> <when attacking>",
+					"No defensive terrain bonus",
+					"[-33]% Strength <when defending>",
+					"[-1] Sight",
+					"Can only attack [City] units",
+					"[+100]% Strength <vs [Archery] <when defending>"],
 		"attackSound": "throw"
 	},
 	
@@ -312,14 +323,92 @@
 		"unitType": "Sword",
 		"movement": 2,
 		"strength": 16,
-		"cost": 90,
+		"cost": 110,
 		"requiredTech": "Civil Service",
-		"uniques": ["[+100]% Strength <vs [Mounted] units>","Cannot be purchased"],
-		"upgradesTo": "Lancer",
-		"obsoleteTech": "Metallurgy",
+		"requiredResource": "Iron",
+		"uniques": ["[+100]% Strength <vs [Mounted] units>",
+					"Cannot be purchased"],
 		"attackSound": "metalhit"
 	},
 
+	{
+		"name": "Knight",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 22,
+		"cost": 400,
+		"requiredTech": "Chivalry",
+		"requiredResource": "Horses",
+		"uniques": ["Never appears as a Barbarian unit",
+					"Cannot be purchased",
+					"[+50]% Strength bonus for [Military] units within [1] tiles",
+					"[+50%] Strength <vs [Mounted] units>",
+					"Consumes [1] Gold",
+					"Consumes [1] Silver",
+					"Consumes [3] Iron"],
+		"attackSound": "horse"
+	},
+
+
+	{
+		"name": "Crossbowman",
+		"unitType": "Archery",
+		"range": 2,
+		"movement": 3,
+		"strength": 5,
+		"rangedStrength": 18,
+		"cost": 300,
+		"requiredTech": "Machinery",
+		"obsoleteTech": "Industrialization",
+		"uniques": ["Can move after attacking",
+					"Withraws before melee combat",
+					"Unable to capture cities",
+					"Cannot be purchased",
+					"[+150]% maintenance costs"],
+		"attackSound": "crossbow"
+	},
+
+	//Longbowman takes even longer to make than archers, and welp, not mounted
+	{
+		"name": "Longbowman",
+		"unitType": "Archery",
+		"range": 2,
+		"movement": 3,
+		"strength": 2,
+		"rangedStrength": 15,
+		"cost": 300,
+		"requiredTech": "Machinery",
+		"obsoleteTech": "Industrialization",
+		"uniques": ["Can move after attacking",
+					"Withraws before melee combat",
+					"Unable to capture cities",
+					"Cannot be purchased",
+					"[+150]% maintenance costs"],
+		"attackSound": "arrow"
+	},
+
+
+	{
+		"name": "Trebuchet",
+		"unitType": "Siege",
+		"range": 2,
+		"movement": 2,
+		"strength": 12,
+		"rangedStrength": 30,
+		"cost": 120,
+		"requiredTech": "Physics",
+		"obsoleteTech": "Chemistry",
+		"upgradesTo": "Cannon",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+					"No defensive terrain bonus",
+					"Must set up to ranged attack",
+					"[-1] Sight",
+					"Never appears as a Barbarian unit",
+					"Can only attack [City] units"],
+		"attackSound": "throw"
+	},
+
+	
 	
 	{
 		"name": "Galleass",
@@ -335,18 +424,7 @@
 		"attackSound": "arrow"
 	},
 	
-	{
-		"name": "Knight",
-		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 20,
-		"cost": 600,
-		"requiredTech": "Chivalry",
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit",
-		"Cannot be purchased"],
-		"attackSound": "horse"
-	},
+	
 	
 	{
 		"name": "Conquistador",
@@ -361,47 +439,8 @@
 		//maybe this is the equivalent of a settler but heavily armedd
 	},
 
-	{
-		"name": "Crossbowman",
-		"unitType": "Archery",
-		"movement": 2,
-		"strength": 13,
-		"rangedStrength": 18,
-		"cost": 120,
-		"requiredTech": "Machinery",
-		"obsoleteTech": "Industrialization",
-		"attackSound": "crossbow"
-	},
-
-	//Longbowman takes even longer to make than archers, and welp, not mounted
-	{
-		"name": "Longbowman",
-		"unitType": "Archery",
-		"range": 2,
-		"movement": 2,
-		"strength": 13,
-		"rangedStrength": 18,
-		"replaces": "Crossbowman",
-		"uniqueTo": "England",
-		"cost": 120,
-		"requiredTech": "Machinery",
-		"obsoleteTech": "Industrialization",
-		"promotions": ["Extended Range"],
-		"attackSound": "arrow"
-	},
-	{
-		"name": "Trebuchet",
-		"unitType": "Siege",
-		"movement": 2,
-		"strength": 12,
-		"rangedStrength": 14,
-		"cost": 120,
-		"requiredTech": "Physics",
-		"obsoleteTech": "Chemistry",
-		"upgradesTo": "Cannon",
-		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus","Must set up to ranged attack","[-1] Sight","Never appears as a Barbarian unit"],
-		"attackSound": "throw"
-	},
+	
+	
 	
 
 	// Rennaisance Era
@@ -1136,7 +1175,7 @@
 		"name": "Great General",
 		"unitType": "Civilian",
 		"uniques": [
-            "[+15]% Strength bonus for [Military] units within [2] tiles",
+            "[+100]% Strength bonus for [Military] units within [3] tiles",
 			"Can be earned through combat <for [Land] units>",
             "Is part of Great Person group [General]",
             "[This Unit] gets a name from the [General] group",
