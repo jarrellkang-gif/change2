@@ -299,10 +299,11 @@
 					"[-1] Sight",
 					"Can only attack [City] units",
 					"[+100]% Strength <vs [Archery]> <when defending>",
-					"Consumes [3] [Iron]",
+					
 					"Cannot be purchased"],
 		"attackSound": "throw"
 	},
+	//"Consumes [3] [Iron]" siege towers consumes 3 iron
 
 
 	{
