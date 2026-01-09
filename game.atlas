@@ -5,3 +5,45 @@ format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
 
+
+UnitIcons/Cuirassier
+  rotate: false
+  xy: 4, 4
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+
+UnitIcons/Light Horseman
+  rotate: false
+  xy: 0, 0
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+
+UnitIcons/Light Warrior
+  rotate: false
+  xy: 201, 0
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+
+
+
+/*
+Light Horseman,0,0,200,200
+Light Infantry,0,201,200,200
+Light Warrior,201,0,200,200
+Line Infantry,201,201,200,200
+Musketeer,0,402,200,200
+Siege Tower,201,402,200,200
+[Au] Mercenary Line Infantry,402,0,200,200
+Brute Warrior,402,201,200,200
+Cuirassier,402,402,200,200
+Heavy Horseman,0,603,200,200
+Heavy Infantry,201,603,200,200
+Horse Archer,402,603,200,200
+Light Cavalry,603,0,200,200
+Lancer,603,201,200,200*/
