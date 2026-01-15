@@ -1,127 +1,88 @@
 [
-
-//THOSE WHO CANNOT FIGHT DIRECTLY
     {
         "name": "Civilian",
         "movementType": "Land"
     },
-    
-     {
-        "name": "Civilian Water",
-        "movementType": "Water"
-    },
-
     {
-        "name": "Military Support",
+        "name": "Sword",
         "movementType": "Land"
     },
-
-
-    
-
-
-
-//LAND UNITS
-    //PRE-GUNPOWDER
-    
     {
-        "name": "Melee",
-        "movementType": "Land",
-        "civilopediaText": [
-            { "text": "Melee units are armed with melee weapons and fight in melee fights. (peak writing)" }
-        ]
+        "name": "Gunpowder",
+        "movementType": "Land"
     },
-     {
-        "name": "Archer",
-        "movementType": "Land",
-         "civilopediaText": [
-            { "text": "All units that are uses strings and arrows to fight. Includes crossbowmen too for convenience." }
-        ]
-    }
-
+    {
+        "name": "Archery",
+        "movementType": "Land"
+    },
+    {
+        "name": "Ranged Gunpowder",
+        "movementType": "Land"
+    },
+    {
+        "name": "Scout",
+        "movementType": "Land"
+    },
+    {
+        "name": "Mounted",
+        "movementType": "Land"
+    },
+    {
+        "name": "Armored",
+        "movementType": "Land"
+    },
     {
         "name": "Siege",
         "movementType": "Land",
         "civilopediaText": [
-            { "text": "Siege units are exclusively used against cities only. They are bad at attacking other units" }
+            { "text": "Siege units are extremely powerful against cities, but need to be Set Up before they can attack.\nOnce your siege unit is set up, it can attack from the current tile,\n  but once moved to another tile, it will need to be set up again." }
         ]
     },
-     {
-        "name": "Mounted",
-        "movementType": "Land",
-         "civilopediaText": [
-            { "text": "Fast moving and often hard hitting." }
-        ]
-    },
-
-
-    //gunpowder
     {
-        "name": "Firearm Infantry",
-        "movementType": "Land",
-        "civilopediaText": [
-            { "text": " " }
-        ]
-    },
-  
-    {
-        "name": "Armored Vehicle",
-        "movementType": "Land"
-    },
-
-    {
-        "name": "Artillery",
-        "movementType": "Land",
-        "civilopediaText": [
-            { "text": "These are siege units that uses the power of explosions to not just propel projectiles, but also destroy the target directly. Can be used effectively against non-cities" }
-        ]
-    },
-
-
-//NAVAL UNITS
-    {
-        "name": "Boat",
-        "movementType": "Water",
-        "uniques": ["Cannot enter [Ocean] tiles"]
-    },
-
-    {
-        "name": "Ship",
+        "name": "Civilian Water",
         "movementType": "Water"
     },
-
-     {
+    {
+        "name": "Melee Water",
+        "movementType": "Water"
+    },
+    {
+        "name": "Ranged Water",
+        "movementType": "Water"
+    },
+    {
         "name": "Submarine",
         "movementType": "Water",
         "uniques": ["Can enter ice tiles", "Invisible to non-adjacent units", "Can see invisible [Submarine] units"]
     },
-    
-    
-
-
-//AERIAL UNITS
     {
-        "name": "Aircraft",
+        "name": "Aircraft Carrier",
+        "movementType": "Water"
+    },
+    {
+        "name": "Fighter",
+        "movementType": "Air",
+        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+    },
+    {
+        "name": "Bomber",
+        "movementType": "Air",
+        "uniques": ["Aircraft"]
+    },
+    {
+        "name": "Atomic Bomber",
         "movementType": "Air",
         "uniques": ["Aircraft"]
     },
     {
         "name": "Missile",
         "movementType": "Air",
-        "uniques": ["Self-destructs when attacking"]
+        "uniques": ["Self-destructs when attacking", "Cannot be intercepted"]
     },
     {
         "name": "Helicopter",
         "movementType": "Land",
         "uniques": ["Can pass through impassable tiles"]
-    },
-    {
-        "name": "Satellite",
-        "movementType": "Land",
-        "uniques": ["Can pass through impassable tiles", "Ignores Zone of Control"]
-        //i am not sure how are satellites supposed to function here
-        //air movementtype for satellites feel awkward
-        //land movementtype for satellites feel right, but the wording is just wrong
     },
 
     // Deprecated unit types required for mods without a UnitTypes.json file to work
