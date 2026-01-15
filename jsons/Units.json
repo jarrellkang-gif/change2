@@ -11,11 +11,9 @@
 		"movement": 2,
 		"requiredTech": "Agriculture",
 		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
-		"civilopediaText": [
-			{
-				"text": "This curious type of xenofauna is able to launch spiky projectiles over long distances."
-			}
-		],
+		"civilopediaText": [{
+				"text": "They build stuff"
+		}],
 		"cost": 70
 	},
 	{
@@ -26,6 +24,9 @@
 		"requiredTech": "Agriculture",
 		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
 			"Requires at least [2] population"],
+		"civilopediaText": [{
+				"text": "They make cities"
+		}],
 		"hurryCostModifier": 20
 	},
 	
