@@ -62,7 +62,7 @@
     {
         "name": "Fighter",
         "movementType": "Air",
-        "uniques": ["Aircraft", "[+4] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+        "uniques": ["Aircraft", "[+1] Sight","Can see over obstacles", "Can perform Air Sweep"]
     },
     {
         "name": "Bomber",
@@ -77,7 +77,7 @@
     {
         "name": "Missile",
         "movementType": "Air",
-        "uniques": ["Self-destructs when attacking", "Cannot be intercepted"]
+        "uniques": ["Self-destructs when attacking"]
     },
     {
         "name": "Helicopter",
