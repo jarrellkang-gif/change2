@@ -849,13 +849,17 @@
 		"requiredTech": "Combustion",
 		"obsoleteTech": "Combined Arms",
 		"uniques": ["Can move after attacking",
+					"Unable to capture cities",
+					"Rough terrain penalty",
+					
 					"[+10]% Strength <when attacking> <vs [Gunpowder] units>",
 					"[-20]% Strength <when defending> <vs [Gunpowder] units> <in [Rought] terrain>",
 			
 					"Never appears as a Barbarian unit",
 					"[+500]% maintenance costs",
 					"Consumes [2] [Iron]",
-					"Consumes [2] [Oil]"],
+					"Consumes [2] [Oil]",
+					"Cannot be purchased"],
 		"attackSound": "tankshot"
 	},
 	
@@ -863,6 +867,7 @@
 		"name": "Submarine",
 		"unitType": "Submarine",
 		"movement": 4,
+		"range": 3,
 		"strength": 40,
 		"rangedStrength": 100,
 		"cost": 350,
@@ -874,7 +879,8 @@
 					"[+500]% maintenance costs",
 					"Consumes [2] [Iron]",
 					"Consumes [1] [Aluminum]",
-					"Consumes [2] [Oil]"],
+					"Consumes [2] [Oil]",
+					"Cannot be purchased"],
 		"attackSound": "torpedo"
 	},
 	
@@ -897,7 +903,8 @@
 					"[+150]% Strength <vs [Bomber] units>",
 					"[+150]% Strength <vs [Helicopter] units>",
 					"[+300]% maintenance costs",
-					"Consumes [2] Oil"],
+					"Consumes [2] Oil",
+					"Cannot be purchased"],
 		"attackSound": "machinegun"
 	},
 	
@@ -913,7 +920,8 @@
 		"requiredResource": "Oil",
 		"uniques": [
 			"[+400]% maintenance costs",
-			"Consumes [3] [Oil]"
+			"Consumes [3] [Oil]",
+			"Cannot be purchased"
 		],
 		"upgradesTo": "Bomber",
 		"obsoleteTech": "Radar",
@@ -931,14 +939,16 @@
 		"interceptRange": 2,
 		"cost": 400,
 		"requiredTech": "Combustion",
-		"uniques": ["Can see invisible [Submarine] units",
+		"uniques": ["Unable to capture cities",
+					"Can see invisible [Submarine] units",
 					"[40]% chance to intercept air attacks",
 					"[+100]% Strength <vs [Submarine] units>",
 					"Never appears as a Barbarian unit",
 					"[+500]% maintenance costs",
 					"Consumes [2] [Aluminum]",
 					"Consumes [2] [Iron]",
-					"Consumes [2] [Oil]"],
+					"Consumes [2] [Oil]",
+					"Cannot be purchased"],
 		"attackSound": "shipguns"
 	},
 
@@ -959,7 +969,8 @@
 					"[+1000]% maintenance costs",
 					"Consumes [5] [Aluminum]",
 					"Consumes [3] [Iron]",
-					"Consumes [4] [Oil]"]
+					"Consumes [4] [Oil]",
+					"Cannot be purchased"]
 	},
 	{
 		"name": "Battleship",
@@ -970,7 +981,7 @@
 		"range": 3,
 		"cost": 950,
 		"requiredTech": "Electronics",
-		"uniques": [
+		"uniques": ["Unable to capture cities",
 					"[+100]% Strength <vs cities> <when attacking>",
 					"[+100]% Strength <with [20]% chance> <when attacking> <vs [Gunpowder] units>",
 					"[+50]% Strength <with [20]% chance> <when attacking> <vs [Armored] units>",
@@ -982,7 +993,8 @@
 					"[+1000]% maintenance costs",
 					"Consumes [1] [Aluminum]",
 					"Consumes [7] [Iron]",
-					"Consumes [5] [Oil]"],],
+					"Consumes [5] [Oil]",
+					"Cannot be purchased"],
 		"promotions": ["Indirect Fire"],
 		"attackSound": "shipguns"
 		// Does not actually upgrade to Missile Cruisers
@@ -998,10 +1010,12 @@
 		"requiredTech": "Ballistics",
 		"uniques": ["[50]% chance to intercept air attacks",
 					"[+150]% Strength <vs [Air] units>",
+					"Unable to capture cities",
 					"[+150]% Strength <vs [Helicopter] units>",
 					"Never appears as a Barbarian unit",
 					"[+100]% maintenance costs",,
-					"Consumes [1] [Iron]"],
+					"Consumes [1] [Iron]",
+					"Cannot be purchased"],
 		"attackSound": "machinegun"
 	},
 	
@@ -1015,11 +1029,13 @@
 		"requiredTech": "Combined Arms",
 		"uniques": ["Can move after attacking",
 					"Rough terrain penalty",
+					"Unable to capture cities",
 					"Never appears as a Barbarian unit",
 					"[+300]% maintenance costs",
 					"Consumes [1] [Aluminum]",
 					"Consumes [1] [Iron]",
-					"Consumes [1] [Oil]"],
+					"Consumes [1] [Oil]",
+					"Cannot be purchased"],
 		"attackSound": "tankshot"
 	},
 	{
@@ -1031,11 +1047,13 @@
 		"requiredTech": "Combined Arms",
 		"uniques": ["Can move after attacking",
 					"Rough terrain penalty",
+					"Unable to capture cities",
 					"Never appears as a Barbarian unit",
 					"[+400]% maintenance costs",
 					"Consumes [1] [Aluminum]",
 					"Consumes [2] [Iron]",
-					"Consumes [1] [Oil]"],
+					"Consumes [1] [Oil]",
+					"Cannot be purchased"],
 		"attackSound": "tankshot"
 	},
 
@@ -1049,11 +1067,13 @@
 		"requiredResource": "Oil",
 		"uniques":  ["Can move after attacking",
 					"Rough terrain penalty",
+					"Unable to capture cities",
 					"Never appears as a Barbarian unit",
 					"[+500]% maintenance costs",
 					"Consumes [1] [Aluminum]",
 					"Consumes [3] [Iron]",
-					"Consumes [2] [Oil]"],
+					"Consumes [2] [Oil]",
+					"Cannot be purchased"],
 		"attackSound": "tankshot"
 	},
 
@@ -1069,7 +1089,8 @@
 		"uniques": ["[+1] Sight <when [Embarked]>",
 					"[+50]% Strength <when attacking> <when [Embarked]>",
 					"Never appears as a Barbarian unit",
-					"[+200]% maintenance costs"],
+					"[+200]% maintenance costs",
+					"Cannot be purchased"],
 		"attackSound": "shot"
 	},
 	{
@@ -1088,7 +1109,8 @@
 					"[+150]% Strength <vs [Helicopter] units>",
 					"[+400]% maintenance costs",
 					"Consumes [1] [Aluminum]",
-					"Consumes [1] [Oil]"],
+					"Consumes [1] [Oil]",
+					"Cannot be purchased"],
 		"attackSound": "machinegun"
 	},
 	
@@ -1105,7 +1127,8 @@
 					"[+500]% maintenance costs",
 					"Consumes [1] [Aluminum]",
 					"Consumes [1] [Iron]",
-					"Consumes [2] [Oil]"],
+					"Consumes [2] [Oil]",
+					"Cannot be purchased"],
 		"upgradesTo": "Stealth Bomber",
 		"attackSound": "bombing"
 	},
@@ -1122,7 +1145,8 @@
 					"No Movement Cost to Pillage",
 					"Withdraws before melee combat",
 					"Never appears as a Barbarian unit",
-					"[+300]% maintenance costs"],
+					"[+300]% maintenance costs",
+					"Cannot be purchased"],
 		"attackSound": "shot"
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
 	},
@@ -1135,10 +1159,12 @@
 		"cost": 300,
 		"requiredTech": "Combined Arms",
 		"uniques": ["Invisible to non-adjacent units",
+					"Unable to capture cities",
 					"[+250]% Strength <vs [Armored] units>",
 					"Never appears as a Barbarian unit",
 					"Consumes [2] [Iron]",
-					"[+100]% maintenance costs"],
+					"[+100]% maintenance costs",
+					"Cannot be purchased"],
 		"attackSound": "machinegun"
 	},
 
@@ -1152,9 +1178,11 @@
 		"cost": 600,
 		"requiredTech": "Nuclear Fission",
 		"requiredResource": "Uranium",
-		"promotions" : ["Evasion"],
-		"uniques": ["Nuclear weapon of Strength [1]", "Only available <if [Manhattan Project] is constructed>", "Self-destructs when attacking",
-			"Blast radius [2]"],
+		"uniques": ["Nuclear weapon of Strength [1]",
+					"Only available <if [Manhattan Project] is constructed>",
+					"Self-destructs when attacking",
+					"Blast radius [2]",
+					"Cannot be purchased"],
 		"attackSound": "nuke"
 		// Plane rather than a missile - can be based in city or Carrier only.
 		// Can be intercepted, but must die for it not to take effect
@@ -1181,6 +1209,7 @@
 			"[-10]% Strength <vs [Helicopter] units>",
 			"[-10]% Strength <vs [Air] units>",
 			"[+500]% maintenance costs",
+			"Cannot be purchased",
 			"Consumes [2] [Aluminum]"]
 			
 		"promotions": ["Indirect Fire"],
@@ -1197,11 +1226,13 @@
 		"uniques": ["[2] extra interceptions may be made per turn",
 					"[80]% chance to intercept air attacks",
 					"Invisible to non-adjacent units",
+					"Unable to capture cities",
 					"[+200]% Strength <vs [Air] units>",
 					"[-95]% Strength <vs [Gunpowder] units>",
 					"[-95]% Strength <vs [Armored] units>",
 					"[+240]% Strength <vs [Helicopter] units>",
 					"Never appears as a Barbarian unit",
+					"Cannot be purchased",
 					"[+500]% maintenance costs",
 					"Consumes [2] [Aluminum]"],
 		"attackSound": "missile"
@@ -1211,11 +1242,11 @@
 		"unitType": "Missile",
 		"movement": 1,
 		"strength": 10,
-		"rangedStrength": 2200,
+		"rangedStrength": 500,
 		"range": 8,
-		"cost": 150,
+		"cost": 200,
 		"requiredTech": "Advanced Ballistics",
-		"uniques": ["[-100]% maintenance costs"],
+		"uniques": ["[100]% maintenance costs","Cannot be purchased"],
 		"attackSound": "missile"
 	},
 	{
@@ -1230,18 +1261,17 @@
 		"uniques": ["Nuclear weapon of Strength [2]",
 					"Only available <if [Manhattan Project] is constructed>",
 					"Blast radius [2]", 
-					"Consumes [2] [Uranium]"],
+					"Cannot be purchased",
+					"Consumes [5] [Uranium]"],
 		"attackSound": "nuke"
 		//jackpot nuclear missile consumes 2 uranium hahahahahha
 	},
 	{
-		// "Hovering unit" unique gives ability to get into impassable tiles - and only that (no vision bonus or flying over ocean)
-		// Unit embarks like any other ground unit and has penalty for attacking over river or from embarked state
 		"name": "Helicopter Gunship",
 		"unitType": "Helicopter",
-		"movement": 8,
-		"strength": 60,
-		"cost": 425,
+		"movement": 10,
+		"strength": 70,
+		"cost": 505,
 		"requiredTech": "Computers",
 		"requiredResource": "Aluminum",
 		"uniques": ["[+100]% Strength <vs [Armored] units>",
@@ -1250,7 +1280,10 @@
 					"All tiles cost 1 movement",
 					"Ignores Zone of Control", 
 					"Unable to capture cities",
-					"Never appears as a Barbarian unit"],
+					"Never appears as a Barbarian unit",
+					"[+700]% maintenance costs",
+					"Cannot be purchased",
+					"Consumes [2] [Aluminum]"],
 		"attackSound": "machinegun"
 	},
 
@@ -1258,27 +1291,40 @@
 	{
 		"name": "Nuclear Submarine",
 		"unitType": "Submarine",
-		"movement": 6,
+		"movement": 7,
 		"strength": 50,
 		"range": 3,
-		"rangedStrength": 85,
-		"cost": 425,
+		"rangedStrength": 100,
+		"cost": 700,
 		"requiredTech": "Telecommunications",
-		"uniques": ["[+75]% Strength <when attacking>",
-					"Can only attack [Water] tiles",
-					"[+1] Sight",
-					"Can carry [2] [Missile] units", 
-					"Never appears as a Barbarian unit"],
+		"uniques": ["Can only attack [Water] tiles",
+					"[+75]% Strength <when attacking>",
+					"Never appears as a Barbarian unit",
+					"Cannot be purchased",
+					"[+700]% maintenance costs",
+					"Consumes [2] [Iron]",
+					"Consumes [1] [Aluminum]",
+					"Consumes [2] [Oil]",
+					"Consumes [2] [Uranium]"],
 		"attackSound": "torpedo"
 	},
+
+	
 	{
 		"name": "Mechanized Infantry",
 		"unitType": "Gunpowder",
-		"movement": 3,
+		"movement": 4,
 		"strength": 90,
 		"cost": 375,
 		"requiredTech": "Mobile Tactics",
-		"uniques": ["Never appears as a Barbarian unit"],
+		"uniques": ["Can build [Road] improvements on tiles",
+					"Can build [Railroad] improvements on tiles",
+					"Can build [Fort] improvements on tiles",
+					"Rough terrain penalty",
+					"[+20]% Strength bonus for [Gunpowder] units within [1] tiles",
+					"[+400]% maintenance costs",
+					"Cannot be purchased",
+					"Consumes [1] [Oil]"],
 		"attackSound": "tankshot"
 	},
 	{
