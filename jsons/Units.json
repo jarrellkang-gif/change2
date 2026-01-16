@@ -845,7 +845,7 @@
 		"unitType": "Armored",
 		"movement": 2,
 		"strength": 80,
-		"cost": 350,
+		"cost": 500,
 		"requiredTech": "Combustion",
 		"obsoleteTech": "Combined Arms",
 		"uniques": ["Can move after attacking",
@@ -870,11 +870,11 @@
 		"range": 3,
 		"strength": 40,
 		"rangedStrength": 100,
-		"cost": 350,
+		"cost": 500,
 		"requiredTech": "Refrigeration",
-		"upgradesTo": "Nuclear Submarine",
 		"uniques": ["Can only attack [Water] tiles",
-					"[+75]% Strength <when attacking>",
+					"[+75]% Strength <when attacking>"
+			,
 					"Never appears as a Barbarian unit",
 					"[+500]% maintenance costs",
 					"Consumes [2] [Iron]",
@@ -943,6 +943,7 @@
 					"Can see invisible [Submarine] units",
 					"[40]% chance to intercept air attacks",
 					"[+100]% Strength <vs [Submarine] units>",
+			
 					"Never appears as a Barbarian unit",
 					"[+500]% maintenance costs",
 					"Consumes [2] [Aluminum]",
@@ -965,6 +966,7 @@
 		"requiredTech": "Radar",
 		"uniques": ["Cannot attack",
 					"Can carry [6] [Aircraft] units",
+					
 					"Never appears as a Barbarian unit",
 					"[+1000]% maintenance costs",
 					"Consumes [5] [Aluminum]",
@@ -1064,7 +1066,6 @@
 		"strength": 110,
 		"cost": 550,
 		"requiredTech": "Combined Arms",
-		"requiredResource": "Oil",
 		"uniques":  ["Can move after attacking",
 					"Rough terrain penalty",
 					"Unable to capture cities",
@@ -1082,14 +1083,15 @@
 		"name": "Marine",
 		"unitType": "Gunpowder",
 		"movement": 2,
-		"strength": 50,
+		"strength": 55,
 		"cost": 300,
 		"requiredTech": "Pharmaceuticals",
 		"promotions": ["Amphibious"],
 		"uniques": ["[+1] Sight <when [Embarked]>",
 					"[+50]% Strength <when attacking> <when [Embarked]>",
+			
 					"Never appears as a Barbarian unit",
-					"[+200]% maintenance costs",
+					"[+250]% maintenance costs",
 					"Cannot be purchased"],
 		"attackSound": "shot"
 	},
@@ -1107,7 +1109,8 @@
 					"[40]% chance to intercept air attacks",
 					"[+210]% Strength <vs [Bomber] units>",
 					"[+150]% Strength <vs [Helicopter] units>",
-					"[+400]% maintenance costs",
+			
+					"[+300]% maintenance costs",
 					"Consumes [1] [Aluminum]",
 					"Consumes [1] [Oil]",
 					"Cannot be purchased"],
@@ -1121,15 +1124,17 @@
 		"strength": 65,
 		"rangedStrength": 65,
 		"range": 16,
-		"cost": 375,
+		"cost": 500,
 		"requiredTech": "Radar",
 		"uniques": ["Destroys tile improvements when attacking",
-					"[+500]% maintenance costs",
+			
+					"[-80]% Strength <with [90]% chance> <when attacking> <vs [Gunpowder] units>",
+					"[-80]% Strength <with [90]% chance> <when attacking> <vs [Armored] units>",
+			
 					"Consumes [1] [Aluminum]",
 					"Consumes [1] [Iron]",
 					"Consumes [2] [Oil]",
 					"Cannot be purchased"],
-		"upgradesTo": "Stealth Bomber",
 		"attackSound": "bombing"
 	},
 	
@@ -1144,8 +1149,9 @@
 					"Invisible to non-adjacent units",
 					"No Movement Cost to Pillage",
 					"Withdraws before melee combat",
+			
 					"Never appears as a Barbarian unit",
-					"[+300]% maintenance costs",
+					"[+250]% maintenance costs",
 					"Cannot be purchased"],
 		"attackSound": "shot"
 		// upgradesTo "XCOM Squad", "No Movement Cost to Pillage" in BNW
@@ -1161,11 +1167,12 @@
 		"uniques": ["Invisible to non-adjacent units",
 					"Unable to capture cities",
 					"[+250]% Strength <vs [Armored] units>",
+			
 					"Never appears as a Barbarian unit",
 					"Consumes [2] [Iron]",
 					"[+100]% maintenance costs",
 					"Cannot be purchased"],
-		"attackSound": "machinegun"
+		"attackSound": "tankshot"
 	},
 
 	{
@@ -1208,6 +1215,7 @@
 			"[+10]% Strength <with [30]% chance> <when attacking> <vs [Armored] units>",
 			"[-10]% Strength <vs [Helicopter] units>",
 			"[-10]% Strength <vs [Air] units>",
+			
 			"[+500]% maintenance costs",
 			"Cannot be purchased",
 			"Consumes [2] [Aluminum]"]
@@ -1231,6 +1239,7 @@
 					"[-95]% Strength <vs [Gunpowder] units>",
 					"[-95]% Strength <vs [Armored] units>",
 					"[+240]% Strength <vs [Helicopter] units>",
+			
 					"Never appears as a Barbarian unit",
 					"Cannot be purchased",
 					"[+500]% maintenance costs",
@@ -1242,11 +1251,12 @@
 		"unitType": "Missile",
 		"movement": 1,
 		"strength": 10,
-		"rangedStrength": 500,
+		"rangedStrength": 200,
 		"range": 8,
 		"cost": 200,
 		"requiredTech": "Advanced Ballistics",
-		"uniques": ["[100]% maintenance costs","Cannot be purchased"],
+		"uniques": ["[100]% maintenance costs",
+					"Cannot be purchased"],
 		"attackSound": "missile"
 	},
 	{
@@ -1279,6 +1289,7 @@
 					"All tiles cost 1 movement",
 					"Ignores Zone of Control", 
 					"Unable to capture cities",
+			
 					"Never appears as a Barbarian unit",
 					"[+700]% maintenance costs",
 					"Cannot be purchased",
@@ -1299,8 +1310,9 @@
 		"uniques": ["Can only attack [Water] tiles",
 					"[+75]% Strength <when attacking>",
 					"Never appears as a Barbarian unit",
+			
 					"Cannot be purchased",
-					"[+700]% maintenance costs",
+					"[+800]% maintenance costs",
 					"Consumes [2] [Iron]",
 					"Consumes [1] [Aluminum]",
 					"Consumes [2] [Oil]",
@@ -1344,8 +1356,8 @@
 					"[+150]% Strength <vs [Helicopter] units>",
 					"[+50]% Strength <with [30]% chance> <when attacking> <vs [Gunpowder] units>",
 					"[+10]% Strength <with [30]% chance> <when attacking> <vs [Armored] units>",
-					
-					"[+100]% Strength <vs [Submarine] units>", 
+					"[+100]% Strength <vs [Submarine] units>",
+			
 					"Never appears as a Barbarian unit",
 					"[+1100]% maintenance costs",
 					"Consumes [5] [Aluminum",
@@ -1366,6 +1378,7 @@
 		"uniques": ["Can move after attacking",
 					"Rough terrain penalty",
 					"Unable to capture cities",
+			
 					"Never appears as a Barbarian unit",
 					"[+700]% maintenance costs",
 					"Consumes [2] [Aluminum]",
@@ -1391,6 +1404,7 @@
 					"[80]% chance to intercept air attacks",
 					"[+210]% Strength <vs [Bomber] units>",
 					"[+150]% Strength <vs [Helicopter] units>",
+			
 					"[+1000]% maintenance costs",
 					"Consumes [5] [Aluminum]",
 					"Consumes [3] [Oil]",
@@ -1409,6 +1423,7 @@
 		"uniques": ["Damage taken from interception reduced by [70]%", 
 					"Cannot be carried by [Carrier] units",
 					"Destroys tile improvements when attacking",
+			
 					"[+1500]% maintenance costs",
 					"Consumes [6] [Aluminum]",
 					"Consumes [2] [Iron]",
