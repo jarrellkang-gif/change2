@@ -1015,7 +1015,7 @@
 					"Unable to capture cities",
 					"[+150]% Strength <vs [Helicopter] units>",
 					"Never appears as a Barbarian unit",
-					"[+100]% maintenance costs",,
+					"[+100]% maintenance costs",
 					"Consumes [1] [Iron]",
 					"Cannot be purchased"],
 		"attackSound": "machinegun"
