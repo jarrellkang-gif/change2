@@ -1330,8 +1330,8 @@
 					"Can build [Fort] improvements on tiles",
 					"Rough terrain penalty",
 					"[+30]% Strength bonus for [Gunpowder] units within [1] tiles",
-
-					"Never appears as a barbarian unit",
+			
+					"Never appears as a Barbarian unit",
 					"[+400]% maintenance costs",
 					"Cannot be purchased",
 					"Consumes [1] [Oil]"],
